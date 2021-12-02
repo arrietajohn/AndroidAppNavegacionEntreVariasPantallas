@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapa_navegacion"
+    app:startDestination="@id/fragmentoMenu">
+
+    <fragment
+        android:id="@+id/fragmentoMenu"
+        android:name="co.gov.mintic.misiontic.ciclo4.FragmentoMenu"
+        android:label="layout_fragmento_menu"
+        tools:layout="@layout/layout_fragmento_menu" >
+        <action
+            android:id="@+id/action_fragmentoMenu_to_fragmento1"
+            app:destination="@id/fragmento1" />
+        <action
+            android:id="@+id/action_fragmentoMenu_to_fragmento2"
+            app:destination="@id/fragmento2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento1"
+        android:name="co.gov.mintic.misiontic.ciclo4.Fragmento1"
+        android:label="layout_fragmento1"
+        tools:layout="@layout/layout_fragmento1" >
+        <action
+            android:id="@+id/action_fragmento1_to_fragmentoMenu"
+            app:destination="@id/fragmentoMenu" />
+        <action
+            android:id="@+id/action_fragmento1_to_fragmento2"
+            app:destination="@id/fragmento2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento2"
+        android:name="co.gov.mintic.misiontic.ciclo4.Fragmento2"
+        android:label="layout_fragmento2"
+        tools:layout="@layout/layout_fragmento2" >
+        <action
+            android:id="@+id/action_fragmento2_to_fragmentoMenu"
+            app:destination="@id/fragmentoMenu" />
+        <action
+            android:id="@+id/action_fragmento2_to_fragmento1"
+            app:destination="@id/fragmento1" />
+    </fragment>
+</navigation>

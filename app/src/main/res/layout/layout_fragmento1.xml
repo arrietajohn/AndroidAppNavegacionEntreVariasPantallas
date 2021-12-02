@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenidoF1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="70dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".Fragmento1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAtras1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:text="@string/eti_atras" />
+
+        <Button
+            android:id="@+id/btnSiguiente1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/eti_siguiente" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/eti_titulo_fragmento1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#830808"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/eti_contenido_fragmento_1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#128817"
+        android:textSize="200sp"
+        android:textStyle="bold" />
+</LinearLayout>
